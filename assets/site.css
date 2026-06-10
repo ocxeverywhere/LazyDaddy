@@ -329,6 +329,27 @@ dd {
   margin: 0;
 }
 
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 14px 18px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--ink);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.social-link svg {
+  flex: 0 0 auto;
+}
+
 .page-header {
   background: var(--surface);
   border-block-end: 1px solid var(--line);
@@ -466,6 +487,10 @@ td {
 
   .site-footer {
     flex-direction: column;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
   }
 }
 
