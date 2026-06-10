@@ -217,8 +217,29 @@ h3 {
 }
 
 .section--details,
+.section--showcase,
+.section--voice,
 .section--business {
   background: var(--surface);
+}
+
+.section--recommend {
+  background: #f6fbf8;
+}
+
+.showcase-copy {
+  margin-block-end: 28px;
+}
+
+.feature-showcase {
+  margin: 0;
+}
+
+.feature-showcase img {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 20px 58px rgb(15 32 42 / 12%);
 }
 
 .section-heading {
@@ -227,6 +248,10 @@ h3 {
   justify-content: space-between;
   gap: 24px;
   margin-block-end: 28px;
+}
+
+.section-heading--spaced {
+  margin-block-start: clamp(44px, 7vw, 76px);
 }
 
 .detail-grid,
@@ -272,6 +297,10 @@ dd {
   gap: 18px;
 }
 
+.feature-list--dense {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .feature-list article {
   min-height: 170px;
   padding: 24px;
@@ -291,6 +320,71 @@ dd {
 .feature-list p {
   margin-block-start: 16px;
   font-size: 1rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.info-panel,
+.keyword-panel {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: clamp(22px, 4vw, 32px);
+}
+
+.info-panel p {
+  margin-block: 16px 0;
+  color: var(--muted);
+}
+
+.table-wrap--compact {
+  margin-block-end: 0;
+}
+
+.table-wrap--compact table {
+  min-width: 0;
+}
+
+.check-list,
+.plain-list,
+.keyword-list {
+  margin-block: 18px 0;
+  padding-inline-start: 20px;
+}
+
+.check-list li,
+.plain-list li {
+  margin-block: 8px;
+  color: var(--muted);
+}
+
+.recommend-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
+  gap: clamp(28px, 6vw, 72px);
+  align-items: start;
+}
+
+.keyword-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.keyword-list li {
+  border: 1px solid rgb(61 107 82 / 24%);
+  border-radius: 8px;
+  padding: 8px 11px;
+  background: #fff;
+  color: var(--green);
+  font-weight: 800;
 }
 
 .business-panel {
@@ -471,7 +565,10 @@ td {
 
   .split,
   .business-panel,
-  .feature-list {
+  .feature-list,
+  .feature-list--dense,
+  .info-grid,
+  .recommend-grid {
     grid-template-columns: 1fr;
   }
 
