@@ -13,6 +13,8 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/lazydaddy-feature.png">
     <link rel="icon" href="assets/lazydaddy-icon.png">
+    <link rel="alternate" hreflang="ko" href="./">
+    <link rel="alternate" hreflang="en" href="en/">
     <link rel="stylesheet" href="assets/site.css">
   </head>
   <body>
@@ -22,7 +24,13 @@
           <img src="assets/lazydaddy-icon.png" alt="" width="40" height="40">
           <span>LazyDaddy</span>
         </a>
-        <a class="nav-link" href="privacy/">개인정보 처리방침</a>
+        <div class="topbar__links">
+          <div class="language-switcher" aria-label="언어 선택">
+            <a href="./" lang="ko" aria-current="page">한국어</a>
+            <a href="en/" lang="en">English</a>
+          </div>
+          <a class="nav-link" href="privacy/">개인정보 처리방침</a>
+        </div>
       </nav>
 
       <div class="hero__content">
