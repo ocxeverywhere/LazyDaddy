@@ -196,6 +196,28 @@ h3 {
   margin-block-start: 34px;
 }
 
+.support-widget {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: rgb(255 255 255 / 90%);
+  font-weight: 800;
+}
+
+.support-widget span {
+  line-height: 1.25;
+}
+
+.support-widget iframe,
+.support-widget a {
+  min-height: 44px;
+}
+
+.support-widget iframe {
+  height: 44px !important;
+}
+
 .status-badge {
   display: inline-flex;
   align-items: center;
