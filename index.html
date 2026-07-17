@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LazyDaddy | 레이지 대디</title>
+    <title>LazyDaddy: 동화책 읽어주기</title>
     <meta
       name="description"
-      content="LazyDaddy는 부모와 보호자를 위한 안드로이드 동화책 리더 앱입니다. 한국어와 영어 책을 촬영하고 OCR과 TTS로 아이와 함께 듣는 시간을 만듭니다."
+      content="LazyDaddy: 동화책 읽어주기는 부모와 보호자를 위한 안드로이드 앱입니다. 한국어와 영어 책을 촬영하고 OCR과 TTS로 아이와 함께 듣는 시간을 만듭니다."
     >
-    <meta property="og:title" content="LazyDaddy | 레이지 대디">
+    <meta property="og:title" content="LazyDaddy: 동화책 읽어주기">
     <meta property="og:description" content="아빠랑 함께하는 신나는 동화책 읽기. Google Play 스토어 출시.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/lazydaddy-feature.png">
+    <meta property="og:image" content="https://ocxeverywhere.github.io/LazyDaddy/assets/lazydaddy-feature.png">
     <link rel="icon" href="assets/lazydaddy-icon.png">
     <link rel="alternate" hreflang="ko" href="./">
     <link rel="alternate" hreflang="en" href="en/">
@@ -34,7 +34,7 @@
       </nav>
 
       <div class="hero__content">
-        <p class="eyebrow">레이지 대디 (LazyDaddy)</p>
+        <p class="eyebrow">LazyDaddy: 동화책 읽어주기</p>
         <h1>아빠랑 함께하는<br>신나는 동화책 읽기</h1>
         <p class="hero__lead">
           LazyDaddy는 부모와 보호자가 종이 동화책을 촬영하고, 글자를 인식한 뒤
@@ -64,7 +64,7 @@
         <div class="section__inner split">
           <div>
             <p class="eyebrow">Android app</p>
-            <h2 id="app-title">LazyDaddy</h2>
+            <h2 id="app-title">LazyDaddy: 동화책 읽어주기</h2>
             <p>
               매일 밤 같은 책을 여러 번 읽어 주는 부모의 수고를 덜고, 아이와 함께 앉아
               이야기에 집중할 수 있게 돕는 작은 도구입니다. 사진 촬영, OCR, 텍스트 편집,
@@ -178,7 +178,7 @@
             </article>
             <article>
               <h3>AI 음성 낭독</h3>
-              <p>Google Cloud TTS를 사용한 자연스러운 한국어 음성과 기기 내장 TTS를 지원합니다.</p>
+              <p>Google Cloud TTS로 생성해 캐시한 자연스러운 한국어·영어 음성과 오프라인에서도 사용할 수 있는 기기 내장 TTS를 지원합니다.</p>
             </article>
             <article>
               <h3>다중 화자 지원</h3>
@@ -203,6 +203,14 @@
             <article>
               <h3>회원 가입 불필요</h3>
               <p>로그인도, 구독도 없이 바로 사용할 수 있습니다.</p>
+            </article>
+            <article>
+              <h3>처음 사용 안내와 샘플 음성</h3>
+              <p>빈 책장에서 한국어 또는 영어 샘플 음성을 듣고, 카메라 촬영이나 일반 책 만들기로 바로 시작하거나 책장으로 이동할 수 있습니다.</p>
+            </article>
+            <article>
+              <h3>설정에서 바로 문의하기</h3>
+              <p>의견 보내기, 버그 신고, Google Play, 개발자 페이지, 개인정보처리방침을 설정에서 바로 열 수 있습니다.</p>
             </article>
           </div>
         </div>
@@ -230,8 +238,8 @@
                   <tbody>
                     <tr>
                       <td>Google Cloud TTS</td>
-                      <td>가장 자연스러운 한국어와 영어 음성</td>
-                      <td>필요</td>
+                      <td>자연스러운 한국어·영어 음성을 생성하고 기기에 캐시</td>
+                      <td>새 음성 생성 시 필요</td>
                     </tr>
                     <tr>
                       <td>기기 내장 TTS (Android)</td>
@@ -247,8 +255,10 @@
               <ul class="check-list">
                 <li>카메라는 책 페이지 촬영에만 사용되며, 촬영 이미지는 외부 서버로 전송되지 않습니다.</li>
                 <li>OCR은 기기 내부에서만 처리됩니다.</li>
-                <li>저장된 동화책 텍스트는 기기 내부에만 보관됩니다.</li>
-                <li>AI 음성 변환(TTS) 시에만 책 텍스트가 Google 서버로 전송됩니다.</li>
+                <li>저장된 동화책 텍스트는 기기에 보관되며, Cloud TTS로 새 음성을 만들거나 저장된 책의 번역을 실행할 때만 필요한 텍스트가 Google에 전송됩니다.</li>
+                <li>Firebase Analytics는 새 설치에서 기본 활성화되며 설정의 사용 분석 데이터에서 언제든 끌 수 있습니다. 앱이 정의한 분석 이벤트에는 책 내용이나 사진이 포함되지 않습니다.</li>
+                <li>의견 및 오류 신고는 수정 가능한 메일 초안을 열며, 앱·Android 버전과 기기 정보는 사용자가 직접 메일을 보낼 때만 전송됩니다.</li>
+                <li>내보낸 음성 및 페이지별 MP4 파일은 사용자가 선택한 기기 폴더에 저장되며 사용자가 직접 관리하고 삭제합니다.</li>
                 <li>앱 내 광고(AdMob)는 책 저장/편집 완료 후 화면 전환 시에만 표시되며, 독서 중에는 나타나지 않습니다.</li>
                 <li>수집된 개인정보는 제3자에게 판매되지 않습니다.</li>
               </ul>
