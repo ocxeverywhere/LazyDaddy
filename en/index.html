@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LazyDaddy | A Heartwarming Storybook Reader</title>
+    <title>LazyDaddy: Scan & Read Books</title>
     <meta
       name="description"
-      content="LazyDaddy is an Android storybook reader for parents and guardians. Take photos of paper books, review OCR text, and read together with Korean and English TTS."
+      content="LazyDaddy: Scan & Read Books is an Android app for parents and guardians. Take photos of paper books, review OCR text, and read together with Korean and English TTS."
     >
-    <meta property="og:title" content="LazyDaddy | A Heartwarming Storybook Reader">
+    <meta property="og:title" content="LazyDaddy: Scan & Read Books">
     <meta property="og:description" content="A heartwarming storybook to read together with dad. Available on Google Play.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="../assets/lazydaddy-feature-en.png">
+    <meta property="og:image" content="https://ocxeverywhere.github.io/LazyDaddy/assets/lazydaddy-feature-en.png">
     <link rel="icon" href="../assets/lazydaddy-icon.png">
     <link rel="alternate" hreflang="ko" href="../">
     <link rel="alternate" hreflang="en" href="./">
@@ -34,7 +34,7 @@
       </nav>
 
       <div class="hero__content">
-        <p class="eyebrow">LazyDaddy</p>
+        <p class="eyebrow">LazyDaddy: Scan & Read Books</p>
         <h1>A Heartwarming Storybook<br>to Read Together with Dad</h1>
         <p class="hero__lead">
           LazyDaddy helps parents and guardians capture paper storybooks, recognize the text, and
@@ -64,7 +64,7 @@
         <div class="section__inner split">
           <div>
             <p class="eyebrow">Android app</p>
-            <h2 id="app-title">LazyDaddy</h2>
+            <h2 id="app-title">LazyDaddy: Scan & Read Books</h2>
             <p>
               LazyDaddy is a small tool for parents who read the same favorite books night after
               night. Take photos, review the recognized text, save each book, and play it back with
@@ -115,19 +115,11 @@
             </div>
             <div>
               <dt>Content rating</dt>
-              <dd>Everyone</dd>
+              <dd>PEGI 3</dd>
             </div>
             <div>
-              <dt>Play provider</dt>
-              <dd>Google Commerce Ltd</dd>
-            </div>
-            <div>
-              <dt>Version</dt>
-              <dd>1.1.11</dd>
-            </div>
-            <div>
-              <dt>Requires</dt>
-              <dd>Android 8.0 or later</dd>
+              <dt>What's new</dt>
+              <dd>Improves Cloud TTS Studio stability, batch voice-generation speed and reliability, and book creation and player usability.</dd>
             </div>
             <div>
               <dt>Store status</dt>
@@ -177,7 +169,7 @@
             </article>
             <article>
               <h3>AI voice reading</h3>
-              <p>Natural voices are available through Google Cloud TTS, with Android built-in TTS as an option.</p>
+              <p>Generate and cache natural Korean and English audio with Google Cloud TTS, or use Android built-in TTS for offline reading.</p>
             </article>
             <article>
               <h3>Multiple speakers</h3>
@@ -202,6 +194,14 @@
             <article>
               <h3>No sign-up required</h3>
               <p>Start using the app without login, subscription, or a cloud account.</p>
+            </article>
+            <article>
+              <h3>Guided first run and sample audio</h3>
+              <p>From an empty library, hear a Korean or English sample and start with the camera or regular book-creation flow, or continue to the library.</p>
+            </article>
+            <article>
+              <h3>Support links in Settings</h3>
+              <p>Open feedback, bug reports, Google Play, the developer website, and the privacy policy directly from Settings.</p>
             </article>
           </div>
         </div>
@@ -229,8 +229,8 @@
                   <tbody>
                     <tr>
                       <td>Google Cloud TTS</td>
-                      <td>Natural Korean and English voices</td>
-                      <td>Yes</td>
+                      <td>Generates and caches natural Korean and English audio</td>
+                      <td>For new audio generation</td>
                     </tr>
                     <tr>
                       <td>Built-in Android TTS</td>
@@ -246,8 +246,10 @@
               <ul class="check-list">
                 <li>The camera is used only to capture book pages, and captured images are not uploaded by the app.</li>
                 <li>OCR processing runs on the device.</li>
-                <li>Saved storybook text is stored locally on the device.</li>
-                <li>Book text is sent to Google only when Google Cloud TTS is used to generate speech.</li>
+                <li>Saved storybook text stays on the device. Required text is sent to Google only to generate new Cloud TTS audio or when the user translates a saved book.</li>
+                <li>Firebase Analytics is enabled by default on a fresh install and can be turned off under Usage analytics in Settings. App-defined events never include book content or photos.</li>
+                <li>Feedback and bug reports open an editable email draft. App, Android, and device diagnostics are sent only when the user sends the message.</li>
+                <li>Exported audio and per-page MP4 files are stored in a device folder chosen and managed by the user.</li>
                 <li>AdMob ads appear after save or edit transitions, not during the reading experience.</li>
                 <li>Collected personal information is not sold to third parties.</li>
               </ul>
